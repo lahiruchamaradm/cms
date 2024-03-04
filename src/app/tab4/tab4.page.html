@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Clinic Management System
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">`
+  <ion-card color="primary">
+    <ion-card-header>
+      <ion-card-title>Medical Prescription</ion-card-title>
+      <ion-card-subtitle>Chamara Siva</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>Dr Janaka Sandeepa</ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-toggle style="margin-left: 20px; margin-top: 10px;">Before Eating</ion-toggle><br /><br />
+    <ion-toggle style="margin-left: 20px;">After Eating</ion-toggle><br /><br />
+  </ion-card>
+
+  <ion-card>
+    <ion-grid [fixed]="true">
+      <ion-row>
+        <ion-button>Monday</ion-button>
+        <ion-button [disabled]="true">Tuesday</ion-button>
+      </ion-row>
+      <ion-row>
+        <ion-button [disabled]="true">Wednesday</ion-button>
+        <ion-button [disabled]="true">Thursday</ion-button>
+        <ion-button>Friday</ion-button>
+      </ion-row>
+      <ion-row>
+        <ion-button>Saturday</ion-button>
+        <ion-button>Sunday</ion-button>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <ion-card style="margin-top: 50px;">
+    <ion-textarea label="Content" labelPlacement="floating" fill="outline"
+      placeholder="Please Enter the details"></ion-textarea>
+  </ion-card>
+
+  <ion-list>
+    <ion-item>
+      <ion-textarea labelPlacement="stacked" label="Comments" placeholder="Enter your comments">
+        <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+        <ion-button fill="clear" slot="end" aria-label="Show/hide">
+          <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+        </ion-button>
+      </ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block">Submit</ion-button>
+
+</ion-content>
